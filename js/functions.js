@@ -1,5 +1,3 @@
-'use strict';
-
 // Функция для проверки длины строки
 const checkStringLength = (string, maxLength) => string.length <= maxLength;
 
@@ -22,7 +20,7 @@ const extractDigits = (value) => {
 
   for (let i = 0; i < stringValue.length; i++) {
     const parsedDigit = parseInt(stringValue[i], 10);
-    
+
     if (!Number.isNaN(parsedDigit)) {
       result += parsedDigit;
     }
@@ -30,3 +28,7 @@ const extractDigits = (value) => {
 
   return parseInt(result, 10);
 };
+
+checkStringLength('проверяемая строка', 20);
+isPalindrome('топот');
+extractDigits('2023 год');
